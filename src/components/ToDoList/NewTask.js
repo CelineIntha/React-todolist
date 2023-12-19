@@ -21,7 +21,6 @@ function NewTask({ onSubmit }) {
 
   return (
     <div className="container">
-      {/* <h4>Ajouter une nouvelle tâche</h4> */}
       <form className="addTaskForm" onSubmit={(e) => handleSubmit(e)}>
         <input type="text" name="name" placeholder="Ecrire une tâche..."/>
         <button type="submit">Ajouter</button>

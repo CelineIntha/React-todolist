@@ -87,10 +87,6 @@ function Task({ index, t, onDelete, onTaskChecked, onTaskUpdate }) {
         style={{ backgroundColor: t.completed ? "#dff5c9" : "initial" }}
       >
         <>
-          {/* Bouton pour activer/désactiver le mode édition */}
-          <button onClick={() => setIsEditing(!isEditing)}>
-            <FontAwesomeIcon icon="pen" />
-          </button>
           {/* Bouton de validation de la tâche */}
           <button
             className="check-btn"
@@ -98,6 +94,10 @@ function Task({ index, t, onDelete, onTaskChecked, onTaskUpdate }) {
             style={{ backgroundColor: t.completed ? "green" : "var(--accent)" }}
           >
             <FontAwesomeIcon icon="check" />
+          </button>
+          {/* Bouton pour activer/désactiver le mode édition */}
+          <button onClick={() => setIsEditing(!isEditing)}>
+            <FontAwesomeIcon icon="pen" />
           </button>
           {/* Bouton de suppression de la tâche */}
           <button className="delete-btn" onClick={handleDelete}>

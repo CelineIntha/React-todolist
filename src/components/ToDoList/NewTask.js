@@ -1,6 +1,6 @@
 import React from "react";
 import TaskProps from "./TaskProps";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import "../Bootstrap/Style.css";
 
 // Composant qui permet d'ajouter une nouvelle tâche
@@ -21,9 +21,9 @@ function NewTask({ onSubmit }) {
 
   return (
     <div className="container">
-      <h4>Ajouter une nouvelle tâche</h4>
+      {/* <h4>Ajouter une nouvelle tâche</h4> */}
       <form className="addTaskForm" onSubmit={(e) => handleSubmit(e)}>
-        <input type="text" name="name" />
+        <input type="text" name="name" placeholder="Ecrire une tâche..."/>
         <button type="submit">Ajouter</button>
       </form>
     </div>

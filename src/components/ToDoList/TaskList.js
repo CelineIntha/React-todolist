@@ -73,7 +73,7 @@ function TaskList() {
 
   return (
     <div className="container">
-      <h1 className="text-center">Liste des tâches</h1>
+      <h1 className="main-title">Liste des tâches</h1>
       <div className="d-flex justify-content-center align-items-center">
         {/* J'importe le composant "NewTask" qui me permet d'ajouter une nouvelle tâche */}
         <NewTask onSubmit={handleNewTask} />

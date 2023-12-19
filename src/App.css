@@ -13,6 +13,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.main-title {
+  margin-top: 10px;
+  margin-bottom: -2px;
+}
+
 
 .container {
   text-align: center;
@@ -69,14 +74,17 @@ button:hover {
 
 .addTaskForm input[type="text"],
 .addTaskForm button {
+  height: 40px;
+  width: 20%;
   font-size: 16px;
   padding: 8px;
-  margin-right: 5px;
-  border-radius: 25px;
+  margin-right: 8px;
+  border-radius: 10px;
   border: 1px var(--accent) solid;
 }
 
 .addTaskForm button {
+  width: 7%;
   background-color: var(--primary);
   color: var(--background);
   border: none;
@@ -109,7 +117,7 @@ button:hover {
 }
 
 .check-btn:hover {
-background-color: green;
+background-color: green !important;
 }
 
 .delete-btn:hover {
